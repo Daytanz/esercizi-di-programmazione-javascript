@@ -12,3 +12,16 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var time = 56000;
+var secondperhour = 3600;
+var secondperminute = 60;
+
+var hour = Math.floor(time/secondperhour);
+var hourinsecond = (hour*secondperhour);
+var minute = Math.floor([time-hourinsecond]/60);
+var minuteinsecond = minute*secondperminute;
+var second = time - hourinsecond - minuteinsecond;
+
+
+console.log(hour, minute, second);
