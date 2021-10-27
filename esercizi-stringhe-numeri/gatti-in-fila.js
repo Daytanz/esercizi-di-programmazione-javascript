@@ -17,3 +17,11 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var cats = 44;
+var catsxcolumn = 6;
+
+var numberofcolumn = Math.ceil(cats/catsxcolumn);
+var missingcats = (numberofcolumn*catsxcolumn)-cats;
+
+console.log (`${cats}gatti in file per ${catsxcolumn} distribuiti in ${numberofcolumn} file, col resto di ${missingcats}`);
